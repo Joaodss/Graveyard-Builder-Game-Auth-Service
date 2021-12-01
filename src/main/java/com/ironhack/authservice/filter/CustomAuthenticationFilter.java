@@ -31,7 +31,7 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
     private final AuthenticationManager authenticationManager;
 
     public static final String SECRET = "secretPass";
-    public static final Long EXPIRATION_TIME = 30 * 60 * 1000L; // In ms. (30min)
+    public static final Long EXPIRATION_TIME = 120 * 60 * 1000L; // In ms. 2h
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
